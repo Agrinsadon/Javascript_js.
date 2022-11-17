@@ -8,5 +8,3 @@ for (x === 0; x < numparticipants; x++) {
 }
 num.sort((a,b) => a > b ? 1: -1)
 document.querySelector('#i1').textContent = "You have selected "+ numparticipants +  " of participants. These are the names of the participants: " + num;
-
-

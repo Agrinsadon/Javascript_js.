@@ -8,5 +8,3 @@ for (y === 0; y < 5; y++) {
 for (y = num.length - 1; y >= 0; y--) {
  console.log(num[y]);
 }
-
-
