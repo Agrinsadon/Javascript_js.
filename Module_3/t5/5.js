@@ -92,22 +92,20 @@ const picArray = [
   },
 ];
 
-picArray.forEach((pic) => {
+for (let x = 0; x<picArray.length; x++){
   const article = document.createElement('article');
-  const heading = document.createElement('h2');
+  const h2 = document.createElement('h2');
   const figure = document.createElement('figure');
-  const image = document.createElement('img');
-  const imageCaption = document.createElement('p');
-  const text = document.createElement('p');
-
-  article.append(heading, imageCaption, text);
-  heading.textContent = pic.title;
-  figure.append(image, imageCaption);
-  image.src = pic.image.medium;
-  image.alt = pic.title;
-  imageCaption.textContent = pic.caption;
-
-  text.textContent = pic.description;
-  document.querySelector('#pictures').append(article);
-});
-
+  const img = document.createElement('img');
+  const figcaption = document.createElement('figcaption');
+  const p = document.createElement('p');
+  article.append(h2, figure, p)
+  article.classList.add('card')
+  h2.innerHTML = picArray[x].title
+  figure.append(img, figcaption)
+  img.src = picArray[x].image.medium
+  img.alt = picArray[x].title
+  figcaption.textContent = picArray[x].caption
+  p.textContent = picArray[x].description
+  document.querySelector('#pictures').append(article)
+}
