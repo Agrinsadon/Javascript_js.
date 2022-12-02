@@ -1,0 +1,67 @@
+header {
+    background: #0a71b2;
+    width: 100%;
+    display: inline-flex;
+
+
+}
+
+header h1 {
+    text-align: left;
+    display: inline;
+    margin-left: 5rem;
+
+}
+
+header input {
+    width: 15rem;
+    height: 2rem;
+    margin-left: 50rem;
+    margin-top: 1.2rem;
+    display: inline;
+}
+
+header button {
+    width: 5rem;
+    margin-top: 1.2rem;
+    height: 2.37rem;
+}
+
+body {
+    color: white;
+    margin: 0;
+    background-color: #000c28;
+}
+
+li a {
+    font-size: 1.1rem;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #0a71b2;
+}
+
+li a:hover {
+    background-color: rgba(130, 161, 218, 0.37);
+}
+
+#showlist {
+    list-style-type: none;
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+article img {
+    width: 100%;
+    height: 320px;
+}
+
+li {
+    width: 30%;
+    box-sizing: border-box;
+}
+
